@@ -8,17 +8,17 @@
 
 ## Why This Project Exists
 
-Static spreadsheets make it difficult to move from a broad question to the exact segment, department, state or district that explains the result. This report converts that exploration into an interactive Power BI experience with a deliberate analytical sequence.
+Static spreadsheets make it difficult to move from a broad sustainability question to the stakeholder group that explains the result. This report turns that comparison into an interactive Power BI experience with a deliberate analytical sequence.
 
 ## Analytical Story
 
-This report follows a **segment-to-community** storyline:
+This report follows a **stakeholder-to-community** storyline:
 
 1. **Start with stakeholder voices** — dedicated pages isolate Health Workers, Homemakers, Students, Farmers and Teachers so each group can be reviewed without mixing populations.
 2. **Move to the Shirpur view** — the community-level page brings the three ESG dimensions together.
 3. **Close with risk context** — the final page places ESG scores beside the overall risk score, enabling a discussion of where sustainability performance may need attention.
 
-The repository deliberately avoids claiming specific numerical conclusions because the original semantic model is remotely connected and the source data was not supplied separately. The evidence below proves the report structure and fields present in the submitted PBIX.
+The repository deliberately avoids claiming specific numerical conclusions because the original semantic model is remotely connected and the source data was not supplied separately.
 
 ## Verified Project Evidence
 
@@ -47,29 +47,21 @@ Full proof is available in [`docs/technical-evidence.md`](docs/technical-evidenc
 
 ## Data Fields Referenced by the Report
 
-- `E Score_HW`
-- `S Score_HW`
-- `G Score_HW`
-- `E Score_HM`
-- `S Score_HM`
-- `G Score_HM`
-- `E Score_Student`
-- `S Score_Student`
-- `G Score_Student`
-- `E Score_Farmer`
-- `S Score_Farmer`
-- `G Score_Farmer`
-- `E Score_Teacher`
-- `S Score_Teacher`
-- `G Score_Teacher`
-- `E Score_Shirpur`
-- `S Score_Shirpur`
-- `G Score_Shirpur`
+- Environmental, Social and Governance score fields for Health Workers, Homemakers, Students, Farmers and Teachers
+- Shirpur-level Environmental, Social and Governance score fields
 - `Overall Risk Score_Shirpur`
+
+The complete field inventory is recorded in the technical evidence document.
 
 ## Data Lineage
 
-Power BI Service connected report; the PBIX contains report layout and connection metadata, while refresh may require access to the original remote semantic model.
+The PBIX is connected to a Power BI Service semantic model. It contains report layout and connection metadata, while refreshing or editing the underlying model may require authorised access to the original remote source.
+
+## Dashboard Artefact Status
+
+The original PBIX is **not currently committed to this repository**. The connected GitHub interface did not preserve large binary payloads byte-for-byte, so no corrupted dashboard was published.
+
+The report structure, referenced fields, file size and SHA-256 checksum were verified from the original local PBIX. To add the source file safely, follow [`dashboard/README.md`](dashboard/README.md) and confirm that the uploaded file matches the published checksum.
 
 ## Skills Demonstrated
 
@@ -79,10 +71,10 @@ Power BI • ESG analytics • stakeholder segmentation • KPI comparison • r
 
 ```text
 .
-├── dashboard/          # Original Power BI PBIX/PBIT artefact
+├── dashboard/          # Manual PBIX upload target and integrity instructions
 ├── docs/               # Narrative, technical proof and quality notes
-├── evidence/           # Machine-readable report inventory and checksums
-├── screenshots/        # Add exported report-page images here
+├── evidence/           # Machine-readable report inventory and checksum
+├── screenshots/        # Add validated report-page images here
 ├── LINKEDIN_POST.md     # Ready-to-edit portfolio post
 ├── LICENSE
 └── README.md
@@ -90,15 +82,16 @@ Power BI • ESG analytics • stakeholder segmentation • KPI comparison • r
 
 ## How to Review the Work
 
-1. Download the file from [`dashboard/`](dashboard/ESG_Score_Dashboard.pbix).
-2. Open it with Microsoft Power BI Desktop.
-3. Review the page sequence described above.
-4. Reconnect or refresh the source only when authorised.
-5. Compare the file hash with `evidence/SHA256SUMS.txt` to confirm integrity.
+1. Read the verified report inventory in [`docs/technical-evidence.md`](docs/technical-evidence.md).
+2. Review the checksum in [`evidence/SHA256SUMS.txt`](evidence/SHA256SUMS.txt).
+3. Follow [`dashboard/README.md`](dashboard/README.md) to upload or verify `ESG_Score_Dashboard.pbix`.
+4. Open the validated PBIX using Microsoft Power BI Desktop.
+5. Review the stakeholder-to-community sequence described above.
+6. Reconnect or refresh the semantic model only when authorised.
 
 ## Evidence Limitations
 
-GitHub cannot render `.pbix` or `.pbit` files in the browser. The repository therefore provides structural metadata, hashes, field inventories and source notes as proof. Exported Power BI screenshots can be added later without changing the underlying evidence. Numerical findings are intentionally not fabricated where the original source data is unavailable or remotely connected.
+GitHub cannot render `.pbix` files in the browser. This repository therefore separates **verified structural evidence** from screenshots and numerical interpretation. Numerical findings are intentionally not fabricated where the source rows are unavailable or the report depends on a remote semantic model.
 
 ## Author
 
