@@ -1,0 +1,11 @@
+{
+  "output_path": "dashboard/ESG_Score_Dashboard.pbix",
+  "compression": "xz/lzma",
+  "original_size_bytes": 299924,
+  "original_sha256": "3f2932694ac34e41e18ffa68ab1109d88cbaaa8819654725d4418f8de593ab4c",
+  "compressed_size_bytes": 298352,
+  "base64_characters": 397804,
+  "chunk_count": 7,
+  "chunk_size_characters": 60000,
+  "parts_pattern": "payload/chunk-*.b64"
+}
