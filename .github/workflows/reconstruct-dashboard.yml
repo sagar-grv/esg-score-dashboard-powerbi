@@ -1,11 +1,6 @@
 name: Reconstruct Power BI dashboard
 
 on:
-  push:
-    paths:
-      - "artifact_parts/**"
-      - "artifact_manifest.json"
-      - "scripts/reconstruct_dashboard.py"
   workflow_dispatch:
 
 permissions:
