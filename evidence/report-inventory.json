@@ -1,0 +1,29 @@
+{
+  "project": "ESG Score Analysis Dashboard",
+  "repository": "https://github.com/sagar-grv/esg-score-dashboard-powerbi",
+  "artifact": "dashboard/ESG_Score_Dashboard.pbix",
+  "file_size_bytes": 299924,
+  "sha256": "3f2932694ac34e41e18ffa68ab1109d88cbaaa8819654725d4418f8de593ab4c",
+  "page_count": 7,
+  "visual_container_count": 8,
+  "pages": [
+    {"name": "ESG Score HW", "visual_count": 1, "visual_types": {"clusteredColumnChart": 1}},
+    {"name": "ESG Score HM", "visual_count": 1, "visual_types": {"clusteredColumnChart": 1}},
+    {"name": "ESG Score Student", "visual_count": 1, "visual_types": {"clusteredColumnChart": 1}},
+    {"name": "ESG Score Farmer", "visual_count": 1, "visual_types": {"clusteredColumnChart": 1}},
+    {"name": "ESG Score Teacher", "visual_count": 1, "visual_types": {"clusteredColumnChart": 1}},
+    {"name": "ESG Score Shirpur", "visual_count": 1, "visual_types": {"clusteredColumnChart": 1}},
+    {"name": "Duplicate of ESG Score Shirpur", "visual_count": 2, "visual_types": {"clusteredColumnChart": 2}}
+  ],
+  "referenced_fields": [
+    "E Score_HW", "S Score_HW", "G Score_HW",
+    "E Score_HM", "S Score_HM", "G Score_HM",
+    "E Score_Student", "S Score_Student", "G Score_Student",
+    "E Score_Farmer", "S Score_Farmer", "G Score_Farmer",
+    "E Score_Teacher", "S Score_Teacher", "G Score_Teacher",
+    "E Score_Shirpur", "S Score_Shirpur", "G Score_Shirpur",
+    "Overall Risk Score_Shirpur"
+  ],
+  "data_lineage_note": "Power BI Service connected report; the PBIX contains report layout and connection metadata, while refresh may require access to the original remote semantic model.",
+  "verification_basis": ["Report/Layout"]
+}
